@@ -1,0 +1,4 @@
+# robots.txt
+User-agent: *
+
+Sitemap: http://www.themongosarehere.com/sitemap.xml

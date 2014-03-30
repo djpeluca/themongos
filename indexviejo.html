@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+    <title>The Mongos | Turd Rock Para conquistar el mundo</title>
+	<meta name="description" content="The Mongos es una mitica banda de turd punk rock de Uruguay liderada por el gran RO-MAN, el ROBOT MONSTER que vino a conquistar la Tierra." />	
+    <meta name="keywords" content="uruguay, mongos, robot, monster, punk, musica, rock, maquina, burbujas, mongo, djpeluca" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" media="screen" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="css/spacegallery.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="js/eye.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/spacegallery.js"></script>
+    <script type="text/javascript" src="js/layout.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		var visible;
+		var querystring = window.location.search;
+		if (querystring != ""){
+			var splited = new Array();
+			splitted = querystring.split('=');
+			visible = splitted[1];
+		}
+		else{
+			visible ="bienvenida";
+		}
+		//alert(querystring);
+		//alert(visible);
+		$('ul#menu li.'+visible).addClass('select');
+		$('#' + visible).removeClass('none');
+		
+		var activo = 0;
+			$('#myGallery').spacegallery();
+			$('#myGallery a').click(function(){
+				$('#'+activo).removeClass('active');
+				$('#'+activo).addClass('none');
+				activo = (activo + 1) % 3;
+				$('#'+activo).addClass('active'); 
+				$('#'+activo).removeClass('none');
+			}); 
+			$('#bienvenida').hover(function(){
+				$(this).mousemove(function(){
+					$(this).toggleClass('fondo2');
+					$('#obey').toggle();
+				});
+				
+			});
+			
+			$('ul#menu li').click(function(){
+				var Classes = $(this).attr('class').split(" ");
+				$('ul#menu li.'+visible).removeClass('select');
+				$(this).addClass('select');
+				if( visible!= Classes[0])
+				{
+					$('#' + Classes[0]).removeClass('none');
+					$('#' +  visible).addClass('none');
+					visible = Classes[0];
+					var query = "?tab="+visible;
+					window.history.pushState("object or string", "The Mongos", query);
+					//window.location.search = "id=" + visible;
+				}
+			});
+			
+			$('.disc').hover(function(){
+				$(this).next().toggle();
+			});
+			$('.vid').hover(function(){
+				$(this).next().toggle();
+			});
+		
+		});
+		
+	</script>
+</head>
+<body>
+	<!--  WRAPPER -->
+    <div class="wrapper"> 
+        
+		<!-- HEADER -->
+		<div id="header"></div><!-- FIN HEADER -->
+		
+		<!-- MENU -->
+		<div id='divmenu'>
+			<ul id="menu">
+				<li class='bienvenida'>INICIO</li>
+				<li class='banda'>BANDA</li>
+				<li class='discos'>DISCOS</li>
+				<li class='videos'>VIDEOS</li>
+				<li class='novedades'>NOVEDADES</li>
+				
+			</ul>
+		</div> 
+		<!-- FIN MENU -->
+		
+		<!-- BIENVENIDA -->
+		<div id="bienvenida" class="none">
+		<h1>BIENVENIDO HU-MAN</h1>
+		<h1 id="obey" class="obey none">OBEY!!!</h1>
+		</div>
+		<!-- FIN BIENVENIDA -->
+			
+		<!-- BANDA -->
+		<div id="banda" class="none">
+		
+			<div id="info" class="info-banda">
+			<ul id="info-data">
+				<li id='0' class="active"><p><b>RO-MAN THE ALMIGHTY (dispositivo de beatbox y maquina de burbujas)</b></p>
+					<p>Ro-Man es miembro de la raza de los Ro-Mans, una casta extraterrestre de inteligencia superior y vasta ventaja en armamentos de destrucción genocida.
+					En su imperativa misión de recorrer la galaxia conquistando planetas finalmente ha llegado a la Tierra para destruir a cada uno de los terrícolas (hu-mans) 
+					y plantar la bandera de los Ro-Mans sobre su superficie. Desafortunadamente, las leyes de libre exterminio interracial en el planeta Ro-Man acaban de 
+					ser cambiadas con el arribo del partido libertario al poder y como cualquier otro Ro-Man viajante en misión conquistadora se vé privado de poder utilizar 
+					sus métodos convencionales de aniquilación exterminadora. Buscando nuevos caminos para evitar quebrantar las nuevas leyes que lo subordinan, 
+					Ro-Man opta (tras un cursillo intensivo de marketing) por una alternativa un poco más sutil y quizás perversa: infiltrarse entre los hu-mans y dominarlos a través de un impacto cultural. 
+					El mismo consiste en la formación y difusión a pequeña escala de una agrupación musical con miras al inmediato reclutamiento de las masas juveniles. 
+					El primer paso: encontrar a dos desprevenidos adolescentes de bajo coeficiente intelectual y fácil dominio.</p>
+				</li>
+				<li id='1'class="none"><p><b>HU-MAN MONGO (bajo de dos cuerdas y berridos)</b></p>
+					<p>Capturado por Ro-Man una noche en su cuarto, Hu-Man Mongo había fritado su cerebro con sendas dosis televisivas de comedias adolescentes y películas de serie B y Z en VHS’s regrabables durante la mayor parte de su pequeña vida. 
+					Esto le comenzó a deteriorar el funcionamiento de sus neuronas hasta dejarlo en un estado poco menos que vegetativo. 
+					Los electroshocks reanimantes provistos por Ro-Man lo mantienen en pié y medianamente funcional, por lo que sólo puede tocar el bajo con dos cuerdas 
+					(la gorda y la siguiente más gorda) y es alimentado a base de líquidos enlatados, principalmente schweppes, fanta y coca-cola, 
+					recargados regularmente en su casco-porta-bebidas que le envía los fluidos a su boca a través de pequeños tubos de plástico. 
+					Hu-Man Mongo apenas puede pronunciar un número limitado de palabras, lo que explica el ínfimo vocabulario empleado en las letras de las canciones que él vocaliza mecánicamente
+					(apoyado naturalmente por descargas eléctricas que Ro-Man le envía a través de un cable enchufado en su esfínter).</p>
+				</li>
+				<li id='2' class="none"><p><b>HU-MAN PELUCA (guitarra psicotrónica y berridos)</b></p>
+					<p>Hu-Man Peluca (“La Criatura del Negro Lagomar”) solía llamarse Adrián y solía ser un joven de prospero futuro en la carrera de 
+					ingeniería, un auténtico orgullo para sus padres. Hasta que un día un trágico accidente relacionado con la codicia de inalcanzables 
+					bollones con galletitas lulú en estantes superiores le causaron un hematoma cerebral y la perdida total y absoluta de toda cordura 
+					terrícola. A partir de entonces dejó de reconocer a sus similares y se dedicó a hacer surf compulsivamente en las tranquilas aguas de 
+					Lagomar (un lugar negro si los hay) obsesionado con la caza de imaginarios pulpos gigantes que a través de cierto accidente nuclear 
+					se han propagado hasta las costas uruguayas con la intención de devorarse a los bañistas. Hu-Man Peluca se convence a si mismo de que 
+					estas criaturas son además invisibles gracias al “glow” de radioactividad que los rodea, por lo que la única manera de verlos es con un 
+					par de lentes 3D. Armado con un arpón, sus gafas y su tabla de surf, Peluca desaparece un día sin dejar rastro y no vuelve a saberse 
+					de él hasta la primera aparición en vivo del conjunto musicaloide de Ro-Man, ejecutando los acordes de altos decibelios psicotrónicos
+					y aturdido aún por la paranoia pulpera.</p>
+				</li>
+			</ul>
+			</div>
+			
+			<div id="myGallery" class="spacegallery">
+				<img src="images/humanpeluca.jpg" alt="HU-MAN PELUCA" />
+				<img src="images/humanmongo.jpg" alt="HU-MAN MONGO" />
+				<img src="images/romanobey.jpg" alt="RO-MAN" />
+			</div>
+			
+			
+		</div>
+		<!-- FIN BANDA -->
+		
+		<!-- DISCOS -->
+		<div id="discos" class="none">
+			<ul id="listEP">
+				<li><img class="disc" src="images/ep1.jpg" alt="EP 1" /><p class="none">THE MONGOS ATE MY <br/>NEIGHBOURS</p></li>
+				<li><img class="disc" src="images/ep2.jpg" alt="EP 2" /><p class="none">LICUAMIXER</p></li>
+			</ul>
+		</div>
+		<!-- FIN DISCOS -->
+		
+		<!-- VIDEOS -->
+		<div id="videos" class="none">
+			<ul id="listVideos">
+				<li><iframe class="vid" width="300" height="233" src="http://www.youtube.com/embed/SNZayySBjgQ?rel=0" frameborder="0" allowfullscreen></iframe><p class="none">¡Ay mi ojo! <br/>(No se supone que entren cosas ahí)</p></li>
+				<li><iframe class="vid" width="300" height="233" src="http://www.youtube.com/embed/gGslUVx51Xc?rel=0" frameborder="0" allowfullscreen></iframe><p class="none">Abuelas Rabiosas</p></li>
+			</ul>
+		</div>
+		<!-- FIN VIDEOS -->	
+		<!-- NOVEDADES-->
+		<div id="novedades" class="none">
+			<p>Se viene el fin del mundo, estás preparado?</p>
+		</div>
+		<!-- FIN NOVEDADES-->
+		
+    </div>
+	<!-- FIN WRAPPER -->
+		<!-- FOOTER -->	
+		<div id="footer"></div>
+		<!-- FIN FOOTER -->
+	
+</body>
+</html>

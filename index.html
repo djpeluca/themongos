@@ -1,0 +1,271 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>The Mongos Punk | Turd from Uruguay | The Mongos are here</title>
+	<meta name="description" content="RO-MAN and The Mongos are here. And They want to conquer the world with Turd Punk Rock from Uruguay to the world." />	
+    <meta name="keywords" content="uruguay, mongos, robot, monster, punk, music, rock, mongo, djpeluca, manuel facal, adrian barrera" />
+	<meta name="author" content="The Mongos" />
+	<meta property="og:image" content="http://themongos.djpeluca.com/images/roman2.jpg"/>
+	<meta property="og:title" content="The Mongos Punk | Turd from Uruguay | The Mongos are here"/>
+	<meta property="og:url" content="http://themongos.djpeluca.com"/>
+	<meta property="og:description" content="RO-MAN and The Mongos are here. And They want to conquer the world with Turd Punk Rock from Uruguay to the world.">
+	<meta property="og:site_name" content="The Mongos"/>
+	<meta property="og:type" content="band"/>
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" media="screen" type="text/css" href="css/layout.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="css/spacegallery.css" />
+    <link rel="stylesheet" media="screen" type="text/css" href="css/custom.css" />
+    <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="js/eye.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/spacegallery.js"></script>
+    <script type="text/javascript" src="js/layout.js"></script>
+	<link type="text/css" href="js/bubbles/css/BubbleEngineDemo.css" rel="stylesheet" />	
+    <script type="text/javascript" src="js/bubbles/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/bubbles/jquery-BubbleEngine.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		var visible;
+		var querystring = window.location.search;
+		if (querystring != ""){
+			var splited = new Array();
+			splitted = querystring.split('=');
+			visible = splitted[1];
+		}
+		else{
+			visible ="bienvenida";
+		}
+		//alert(querystring);
+		//alert(visible);
+		$('ul#menu li.'+visible).addClass('select');
+		$('#' + visible).removeClass('none');
+		
+		var activo = 0;
+			$('#myGallery').spacegallery();
+			$('#myGallery a').click(function(){
+				$('#'+activo).removeClass('active');
+				$('#'+activo).addClass('none');
+				activo = (activo + 1) % 3;
+				$('#'+activo).addClass('active'); 
+				$('#'+activo).removeClass('none');
+			}); 
+			$('#bienvenida').hover(function(){
+				$(this).mousemove(function(){
+					$(this).toggleClass('fondo2');
+					$('#obey').toggle();
+				});
+				
+			});
+			
+			$('ul#menu li').click(function(){
+				var Classes = $(this).attr('class').split(" ");
+				$('ul#menu li.'+visible).removeClass('select');
+				$(this).addClass('select');
+				if( visible!= Classes[0])
+				{
+					$('#' + Classes[0]).removeClass('none');
+					$('#' +  visible).addClass('none');
+					visible = Classes[0];
+					var query = "?tab="+visible;
+					window.history.pushState("object or string", "The Mongos", query);
+					//window.location.search = "id=" + visible;
+				}
+			});
+			
+			$('.disc').hover(function(){
+				$(this).next().toggle();
+			});
+			/*$('.vid').hover(function(){
+				$(this).next().toggle();
+			});*/
+
+			//Build Bubble Machines with the Bubble Engine ------------------------
+		  var SoapBubbleMachineNumber1 = $('fn').BubbleEngine({
+          particleSizeMin:            0,
+          particleSizeMax:            50,
+          particleSourceX:            450,
+          particleSourceY:            850,
+          particleAnimationDuration:  6000,
+          particleDirection:          'right',
+          particleAnimationDuration:  6000,
+          particleAnimationVariance:  2000,
+          particleScatteringX:        800,
+          particleScatteringY:        300,
+          gravity:                    -300
+        });
+        //Start Bubble Machine 1 ---------------------------------------------
+        SoapBubbleMachineNumber1.addBubbles(50);
+		});
+
+	</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35064616-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=131096906976698";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_floating_style addthis_counter_style" style="top: 25%;float: left;min-width: 70px;background-color: yellow;"> 
+<a class="addthis_button_facebook_like" fb:like:layout="box_count"></a>
+<a class="addthis_button_tweet" tw:count="vertical"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
+<a class="addthis_counter"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ec677bc50561de5"></script>
+<!-- AddThis Button END -->
+	<!--  WRAPPER -->
+    <div id="contenedor">
+        
+		<!-- HEADER -->
+		<div id="cabecera">
+		<img src="/images/themongos.jpg" alt="The Mongos" > </img>
+		</div><!-- FIN HEADER -->
+		
+		<!-- MENU -->
+		<div id='divmenu'>
+			<ul id="menu">
+				<li class='bienvenida' onclick="_gaq.push(['_trackPageview', '/?tab=bienvenida']);">INICIO</li>
+				<li class='banda' onclick="_gaq.push(['_trackPageview', '/?tab=banda']);">BANDA</li>
+				<li class='discos' onclick="_gaq.push(['_trackPageview', '/?tab=discos']);">DISCOS</li>
+				<li class='videos' onclick="_gaq.push(['_trackPageview', '/?tab=videos']);">VIDEOS</li>
+				<li class='novedades' onclick="_gaq.push(['_trackPageview', '/?tab=novedades']);">NOVEDADES</li>
+				<li class='conectate' onclick="_gaq.push(['_trackPageview', '/?tab=conectate']);">FACEBOOK</li>
+				
+			</ul>
+		</div> 
+		<!-- FIN MENU -->
+		
+		<!-- BIENVENIDA -->
+		<div id="bienvenida" class="none" onmouseover="_gaq.push(['_trackEvent', 'Imagen RO-MAN', Focus]);">
+		<h1>The Mongos</h1>
+		<h2>ARE HERE</h2>
+		<h2 id="obey" class="obey none">OBEY!!!</h2>
+		</div>
+		<!-- FIN BIENVENIDA -->
+			
+		<!-- BANDA -->
+		<div id="banda" class="none">
+		
+			<div id="info" class="info-banda">
+			
+			<ul id="info-data">
+				<li id='0' class="active"><p><b>RO-MAN THE ALMIGHTY (dispositivo de beatbox y maquina de burbujas)</b></p>
+					<p>Ro-Man es miembro de la raza de los Ro-Mans, una casta extraterrestre de inteligencia superior y vasta ventaja en armamentos de destrucción genocida.
+					En su imperativa misión de recorrer la galaxia conquistando planetas finalmente ha llegado a la Tierra para destruir a cada uno de los terrícolas (hu-mans) 
+					y plantar la bandera de los Ro-Mans sobre su superficie. Desafortunadamente, las leyes de libre exterminio interracial en el planeta Ro-Man acaban de 
+					ser cambiadas con el arribo del partido libertario al poder y como cualquier otro Ro-Man viajante en misión conquistadora se vé privado de poder utilizar 
+					sus métodos convencionales de aniquilación exterminadora. Buscando nuevos caminos para evitar quebrantar las nuevas leyes que lo subordinan, 
+					Ro-Man opta (tras un cursillo intensivo de marketing) por una alternativa un poco más sutil y quizás perversa: infiltrarse entre los hu-mans y dominarlos a través de un impacto cultural. 
+					El mismo consiste en la formación y difusión a pequeña escala de una agrupación musical con miras al inmediato reclutamiento de las masas juveniles. 
+					El primer paso: encontrar a dos desprevenidos adolescentes de bajo coeficiente intelectual y fácil dominio.</p>
+				</li>
+				<li id='1'class="none"><p><b>HU-MAN MONGO (bajo de dos cuerdas y berridos)</b></p>
+					<p>Capturado por Ro-Man una noche en su cuarto, Hu-Man Mongo había fritado su cerebro con sendas dosis televisivas de comedias adolescentes y películas de serie B y Z en VHS’s regrabables durante la mayor parte de su pequeña vida. 
+					Esto le comenzó a deteriorar el funcionamiento de sus neuronas hasta dejarlo en un estado poco menos que vegetativo. 
+					Los electroshocks reanimantes provistos por Ro-Man lo mantienen en pié y medianamente funcional, por lo que sólo puede tocar el bajo con dos cuerdas 
+					(la gorda y la siguiente más gorda) y es alimentado a base de líquidos enlatados, principalmente schweppes, fanta y coca-cola, 
+					recargados regularmente en su casco-porta-bebidas que le envía los fluidos a su boca a través de pequeños tubos de plástico. 
+					Hu-Man Mongo apenas puede pronunciar un número limitado de palabras, lo que explica el ínfimo vocabulario empleado en las letras de las canciones que él vocaliza mecánicamente
+					(apoyado naturalmente por descargas eléctricas que Ro-Man le envía a través de un cable enchufado en su esfínter).</p>
+				</li>
+				<li id='2' class="none"><p><b>HU-MAN PELUCA (guitarra psicotrónica y berridos)</b></p>
+					<p>Hu-Man Peluca (“La Criatura del Negro Lagomar”) solía llamarse Adrián y solía ser un joven de prospero futuro en la carrera de 
+					ingeniería, un auténtico orgullo para sus padres. Hasta que un día un trágico accidente relacionado con la codicia de inalcanzables 
+					bollones con galletitas lulú en estantes superiores le causaron un hematoma cerebral y la perdida total y absoluta de toda cordura 
+					terrícola. A partir de entonces dejó de reconocer a sus similares y se dedicó a hacer surf compulsivamente en las tranquilas aguas de 
+					Lagomar (un lugar negro si los hay) obsesionado con la caza de imaginarios pulpos gigantes que a través de cierto accidente nuclear 
+					se han propagado hasta las costas uruguayas con la intención de devorarse a los bañistas. Hu-Man Peluca se convence a si mismo de que 
+					estas criaturas son además invisibles gracias al “glow” de radioactividad que los rodea, por lo que la única manera de verlos es con un 
+					par de lentes 3D. Armado con un arpón, sus gafas y su tabla de surf, Peluca desaparece un día sin dejar rastro y no vuelve a saberse 
+					de él hasta la primera aparición en vivo del conjunto musicaloide de Ro-Man, ejecutando los acordes de altos decibelios psicotrónicos
+					y aturdido aún por la paranoia pulpera.</p>
+				</li>
+			</ul>
+			
+			</div>
+			
+			<div id="myGallery" class="spacegallery">
+			<h3  class="obey ">CLICK EN LAS IMAGENES!!!</h3>
+				<img src="images/humanpeluca.jpg" alt="HU-MAN PELUCA" style="margin-left: -150px;" onclick="_gaq.push(['_trackEvent', 'HUMAN-PELUCA', click]);" />
+				<img src="images/humanmongo.jpg" alt="HU-MAN MONGO" style="margin-left: -150px;" onclick="_gaq.push(['_trackEvent', 'HUMAN-MONGO', click]);" />
+				<img src="images/romanobey.jpg" alt="RO-MAN" style="margin-left: -150px;" onclick="_gaq.push(['_trackEvent', 'RO-MAN', click]);" />
+			</div>
+			
+			
+		</div>
+		<!-- FIN BANDA -->
+		
+		<!-- DISCOS -->
+		<div id="discos" class="none">
+			<h3  class="obey ">CLICK EN LAS TAPAS PARA BAJAR!!!</h3>
+			<ul id="listEP">
+				<li> <a class="disc" href="discos/THE-MONGOS-Licuamixer-EP-(2010).rar" onclick="_gaq.push(['_trackPageview', '/?tab=discos&Licuamixer']);"><img class="disc" src="images/ep2.jpg" alt="EP 2" /></a><p class="none"><b>LICUAMIXER - 2010</b></p></li>
+				<li><a class="disc" href="discos/THE-MONGOS-Ate-My-Neighbors-EP-(2008).rar" onclick="_gaq.push(['_trackPageview', '/?tab=discos&AteMyNeighbors']);"><img class="disc" src="images/ep1.jpg" alt="EP 1" /></a><p class="none"><b>THE MONGOS ATE MY <br/>NEIGHBORS - 2008</b></p></li>
+				
+			</ul>
+		</div>
+		<!-- FIN DISCOS -->
+		
+		<!-- VIDEOS -->
+		<div id="videos" class="none">
+			<ul id="listVideos">
+				<li><iframe onclick="_gaq.push(['_trackPageview', '/?tab=videos&aymiojoVIVO']);" class="vid" width="300" height="233" src="http://www.youtube.com/embed/vPuKTztbVl4?rel=0" frameborder="0" allowfullscreen></iframe><p class="active videos">¡Ay mi ojo! EN VIVO</p></li>
+				<li><iframe onclick="_gaq.push(['_trackPageview', '/?tab=videos&abuelas']);" class="vid" width="300" height="233" src="http://www.youtube.com/embed/gGslUVx51Xc?rel=0" frameborder="0" allowfullscreen></iframe><p class="active videos">Abuelas Rabiosas</p></li>
+				<li><iframe onclick="_gaq.push(['_trackPageview', '/?tab=videos&aymiojo']);" class="vid" width="300" height="233" src="http://www.youtube.com/embed/SNZayySBjgQ?rel=0" frameborder="0" allowfullscreen></iframe><p class="active videos">¡Ay mi ojo! <br/>(No se supone que entren cosas ahí)</p></li>
+<li><iframe onclick="_gaq.push(['_trackPageview', '/?tab=videos&mongoarmy']);" class="vid" width="300" height="233" src="http://www.youtube.com/embed/MXjh63ws6eU?rel=0" frameborder="0" allowfullscreen></iframe><p class="active videos">Mongo Army EN VIVO</p></li>
+				
+			</ul>
+			<div class="iframeo"><iframe width="100%" height="166" class="vid" onclick="_gaq.push(['_trackPageview', '/?tab=videos&RemixQuAtsch']);" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F60220621&amp;auto_play=false&amp;show_artwork=true&amp;color=00ff00"></iframe><p class="active videos">QuAtsch Remix</p></div>
+		</div>
+		<!-- FIN VIDEOS -->	
+		<!-- NOVEDADES-->
+		<div id="novedades" class="none">
+			<h2>1- MONGOS TOCA PILA 2014</h2>
+			<h2>2 - NOTICIA 2</h2>
+			<h2>3 - NOTICIA 3</h2>
+		</div>
+		<!-- FIN NOVEDADES-->
+		<!-- CONECTATE-->
+		<div id="conectate" class="none">
+			<div style="margin: 110px 0 0 231px; position: absolute;" class="fb-like-box" data-href="http://www.facebook.com/pages/The-Mongos/270920145169" data-width="292" data-colorscheme="dark" data-show-faces="true" data-stream="false" data-header="true"></div>
+			<ul id="listEP">
+				<li><a class="disc" href="http://www.fotolog.com/the_mongos" onclick="_gaq.push(['_trackPageview', '/?tab=conectate&fotolog']);"><img class="disc" src="images/fotolog_logo.gif" alt="FOTOLOG" rel="_bank" /></a><p class="none"><b>FOTOLOG</b></p></li>
+				<li> <a class="disc" rel="_bank" href="http://www.myspace.com/themongosarehere" onclick="_gaq.push(['_trackPageview', '/?tab=conectate&myspace']);"><img class="disc" src="images/Myspace logo.png" alt="EP 2" /></a><p class="none"><b>myspace</b></p></li>
+			</ul>
+			
+			
+		</div>
+		<!-- FIN CONECTATE-->
+		<div class="corte"></div>
+		<!-- FOOTER -->	
+		<div id="footer"></div>
+		<!-- FIN FOOTER -->
+    </div>
+	<!-- FIN WRAPPER -->
+	
+
+</body>
+</html>

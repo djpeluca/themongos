@@ -1,0 +1,24 @@
+
+.SoapBubbleMachine {
+  z-index: 1000;
+  position: absolute;
+  cursor: move;
+  height: 100px;
+  height: 100px;
+  width: 200px;
+}
+.SoapBubbleMachine button {
+  padding: 1px 3px 1px 3px;
+}
+#SoapBubbleMachineNumber1 {
+  top: 45%;
+  left: 350px;
+}
+#SoapBubbleMachineNumber2 {
+  bottom: 150px;
+  right: 100px;
+}
+
+.bubble {
+  z-index: 1001;
+}

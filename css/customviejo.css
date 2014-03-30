@@ -1,0 +1,201 @@
+/*----------Global-------------*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	/*color: #52697E;*/
+
+}
+body {
+	background-color: magenta;
+	/*background-image: url('../images/background.png');
+	background-repeat:repeat-x;*/
+	/*background-image: -webkit-gradient(linear, left top, left bottom,
+    from(#00FF00), to(#000000) ); /* for Chrome + Safari */
+    /*background-image: -moz-linear-gradient(  top,
+    #00FF00, #000000 ); /* for Firefox */
+    /*box-shadow: 0 -202px 51px -55px #000000 inset;
+	-moz-box-shadow: 0 -202px 51px -55px #000000 inset;
+   -webkit-box-shadow: 0 -202px 51px -55px #000000 inset;*/
+    overflow: auto;
+    text-align: center;
+}
+.wrapper {
+	border-top-right-radius: 2em;
+	border-top-left-radius: 2em;
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #0F0;
+	/*background-image: url('../images/background.png');*/
+	/*background-repeat:repeat-x;*/
+	/*background-color: #00FF00; /* fallback flat color */
+    /*background-image: -webkit-gradient(linear, left top, left bottom,
+    from(#00FF00), to(#000000) ); /* for Chrome + Safari */
+    /*background-image: -moz-linear-gradient(  top,
+    #00FF00, #000000 ); /* for Firefox */
+	/*-moz-box-shadow: 0 -202px 51px -55px #000000 inset;
+   -webkit-box-shadow: 0 -202px 51px -55px #000000 inset;
+   box-shadow: 0 -202px 51px -55px #000000 inset;*/
+min-height: 950px;
+}
+h1 {
+	font-size: 55px;
+	height: 47px;
+	line-height: 155px;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	text-shadow: 0 0 0.2em #FFFF00, 0 0 0.2em #FFFF00,
+        0 0 0.2em #FFFF00
+}
+
+#header {
+	background-color: #FFFFFF;
+    background-image: url("../images/themongos.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    height: 103px;
+    width: 100%;
+}
+
+#divmenu{
+	height:20px;
+	background-color: white;
+	border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+ul#menu li{
+	cursor: pointer;
+    float: left;
+    margin: 2px 0 0 66px;
+	color: red;
+    font-family: comic Sans MS;
+    font-size: 18px;
+    font-weight: bolder;
+    list-style: none outside none;
+}
+
+#footer {
+	background-image: url("../images/footer.png");
+    background-repeat: no-repeat;
+    /*background-color: #000;*/
+	height: 162px;
+    width: 800px;
+position: fixed;
+bottom: 0;
+margin: 0 0 0px 433px;
+}
+
+.select {
+	background-color: #00FF00;
+}
+
+.active{
+display: block;
+}
+.none{
+display: none;
+}
+
+/*------------------------------*/
+
+
+/*--------Bienvenida-----------*/
+
+
+#bienvenida {
+	background-image: url("../images/roman2.jpg");
+    background-repeat: no-repeat;
+	background-position: center center;
+	padding: 50px 0 0;
+	width: 605px;
+    margin: 0 0 0 90px;
+	min-height: 480px;
+}
+.fondo2{
+	background-image: url("../images/roman3.jpg") !important;
+}
+
+.obey{
+
+}
+
+/*------------------------------*/
+
+
+/*-----------Banda-------------*/
+
+#banda{
+overflow: hidden;
+min-height: 480px;
+}
+
+#info{
+	height: 180px;
+    width: 300px;
+	float:  right;
+	margin: 73px 60px 0 0;
+}
+
+#myGallery {
+	/*width: 100%;*/
+	height: 545px;
+	overflow: visible;
+	margin: 0 335px 0 0;
+}
+
+/*------------------------------*/
+
+
+/*----------Discos-------------*/
+
+#discos{
+	margin: 52px 0 0;
+	min-height: 480px;
+}
+
+ul#listEP li{
+	float: left;
+	padding: 24px 0 0 124px;
+}
+
+ul#listEP li p{
+	text-align: center;
+}
+
+.disc{
+width: 200px;
+}
+
+/*------------------------------*/
+
+
+/*----------VIDEOS-------------*/
+
+#videos{
+	min-height: 480px;
+	margin: 52px 0 0;
+}
+
+ul#listVideos li{
+	float: left;
+	padding: 23px 0 0 66px;
+}
+
+ul#listVideos li p{
+	text-align: center;
+}
+
+
+/*------------------------------*/
+
